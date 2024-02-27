@@ -1,9 +1,12 @@
 {
+  "homepage":"https://prabalpsingh7115.github.io/Movie_Discovery",
   "name": "movie",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
