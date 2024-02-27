@@ -16,7 +16,7 @@ export default function UseMovies(query){
     const [status,setStatus]=useState("unloaded");
 
     useEffect(()=>{
-        if(!query)
+        if(query==="")
         {
             setMovieList(getMoviesOnDiscover);
         }
